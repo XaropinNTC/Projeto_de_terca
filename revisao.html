@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila de Revisão - HABIT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1 class="logo">HABIT</h1>
+            <nav aria-label="Menu principal">
+                <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="visually-hidden">Menu</span>
+                </button>
+                <ul class="nav-list" id="main-nav">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Páginas</a></li>
+                    <li><a href="#">Destaques</a></li>
+                    <li><a href="#">Assinar</a></li>
+                    <li><a href="admin.html" aria-current="page">Admin</a></li>
+                </ul>
+            </nav>
+            <form class="search-form" role="search" aria-label="Busca no site" action="resultados-busca.html" method="GET">
+                <label for="search-input" class="visually-hidden">Buscar</label>
+                <input type="search" id="search-input" name="q" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+                <a href="login.html" class="btn-login-link">Entrar</a>
+            </form>
+        </div>
+    </header>
+    <main class="dashboard-container">
+        <aside class="dashboard-menu">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Criar Post</a></li>
+                <li><a href="#">Escolhas do Editor</a></li>
+                <li><a href="admin.html">Usuários</a></li>
+                <li><a href="revisao.html">Fila de revisão</a></li>
+                <li><a href="#">Fila de comentários</a></li>
+            </ul>
+        </aside>
+        <section class="dashboard-content">
+            <div class="stats-cards">
+                <div class="card">
+                    <p>Posts</p>
+                    <span>128</span>
+                </div>
+                <div class="card">
+                    <p>Visualizações</p>
+                    <span>54k</span>
+                </div>
+                <div class="card">
+                    <p>Inscritos</p>
+                    <span>12k</span>
+                </div>
+                <div class="card">
+                    <p>Pendências</p>
+                    <span>7</span>
+                </div>
+            </div>
+            <div class="review-queue-container">
+                <h2>Fila de revisão</h2>
+                <div class="review-search">
+                    <input type="text" placeholder="Buscar posts...">
+                </div>
+                <table class="review-table">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Post #1</td>
+                            <td>Autor 1</td>
+                            <td>Em revisão</td>
+                            <td class="action-buttons">
+                                <button class="btn-approve">Aprovar</button>
+                                <button class="btn-reject">Reprovar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Post #2</td>
+                            <td>Autor 2</td>
+                            <td>Em revisão</td>
+                            <td class="action-buttons">
+                                <button class="btn-approve">Aprovar</button>
+                                <button class="btn-reject">Reprovar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Post #3</td>
+                            <td>Autor 3</td>
+                            <td>Em revisão</td>
+                            <td class="action-buttons">
+                                <button class="btn-approve">Aprovar</button>
+                                <button class="btn-reject">Reprovar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Post #4</td>
+                            <td>Autor 4</td>
+                            <td>Em revisão</td>
+                            <td class="action-buttons">
+                                <button class="btn-approve">Aprovar</button>
+                                <button class="btn-reject">Reprovar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Post #5</td>
+                            <td>Autor 5</td>
+                            <td>Em revisão</td>
+                            <td class="action-buttons">
+                                <button class="btn-approve">Aprovar</button>
+                                <button class="btn-reject">Reprovar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="dashboard-footer">
+        <div class="footer-tags">
+            <a href="#">Instagram</a>
+            <a href="#">Work</a>
+            <a href="#">Bags</a>
+            <a href="#">Lamp</a>
+            <a href="#">Books</a>
+        </div>
+         <div class="footer-copy">
+            <p>© 2025 Meu Site • Meu site</p>
+        </div>
+    </footer>
+</body>
+</html>

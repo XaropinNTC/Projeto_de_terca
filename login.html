@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HABIT - Entrar</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">HABIT</h1>
+      <nav aria-label="Menu principal">
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <ul class="nav-list" id="main-nav">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#">Páginas</a></li>
+          <li><a href="#">Destaques</a></li>
+          <li><a href="#">Assinar</a></li>
+          <li><a href="#">Admin</a></li>
+        </ul>
+      </nav>
+      <form class="search-form" role="search" aria-label="Busca no site" action="resultados-busca.html" method="GET">
+        <label for="search-input" class="visually-hidden">Buscar</label>
+        <input type="search" id="search-input" name="q" placeholder="Buscar..." />
+        <button type="submit">Buscar</button>
+        <!-- Botão Entrar agora leva para a página de login -->
+        <a href="login.html" class="btn-login-link">Entrar</a>
+      </form>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="login-section" aria-labelledby="login-title">
+      <div class="login-card">
+        <h2 id="login-title">Entrar</h2>
+        <form class="login-form" method="POST">
+           <div class="form-group">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="E-mail" required aria-required="true">
+  </div>
+  
+  <div class="form-group">
+    <label for="password">Senha</label>
+    <input type="password" id="password" name="password" placeholder="Senha" required aria-required="true">
+  </div>
+  
+  <button type="submit" class="btn btn-primary btn-login">Entrar</button>
+  <button type="button" class="btn btn-outline btn-google">
+    Entrar com Google
+  </button>
+  
+  <div class="login-links">
+    <a href="esqueci-senha.html">Esqueci a senha</a>
+    <a href="criar-conta.html">Criar conta</a>
+  </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Navegação secundária" class="footer-nav container">
+      <ul>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Lamp</a></li>
+        <li><a href="#">Criar conta</a></li>
+      </ul>
+    </nav>
+    <div class="footer-copy container">
+      <p>© 2025 HABIT • Todos os direitos reservados</p>
+    </div>
+  </footer>
+  <script src="js/login.js"></script>
+</body>
+</html>

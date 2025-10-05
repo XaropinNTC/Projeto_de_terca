@@ -1,26 +1,121 @@
-<html>
-    <head>
-        <link href="style.css" rel="stylesheet"/>
-    </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HABIT - Página Inicial</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 <body>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">HABIT</h1>
+      <nav aria-label="Menu principal">
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <ul class="nav-list" id="main-nav">
+          <li><a href="#" aria-current="page">Início</a></li>
+          <li><a href="#">Páginas</a></li>
+          <li><a href="#">Destaques</a></li>
+          <li><a href="#">Assinar</a></li>
+          <li><a href="#">Admin</a></li>
+        </ul>
+      </nav>
+     <form class="search-form" role="search" aria-label="Busca no site" action="resultados-busca.html" method="GET">
+  <label for="search-input" class="visually-hidden">Buscar</label>
+  <input type="search" id="search-input" name="q" placeholder="Buscar..." />
+  <button type="submit">Buscar</button>
+  <a href="login.html" class="btn-login-link">Entrar</a>
+     </form>
+    </div>
+  </header>
 
-    <header>
-  <h1>Titulo maior aqui</h1>
-  <nav>
-    <ul>
-        <li><a href="https://www.youtube.com"><button>clique pra ir ao YT</button></a></li>
-    
-    </ul>
-  </nav>      
-    </header>
-<main>
-    <h2>conteudo principal</h2>
-    <p>conteudo mais importante da pagina</p>
-</main>
-<footer>
-
-
-</footer>
-
- </body>
+  <main>
+    <section aria-labelledby="topics-title" class="topics-section container">
+      <h2 id="topics-title">Navegue por tópicos de interesse</h2>
+      <p class="subtitle">
+        Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.
+      </p>
+      <div class="cta-buttons">
+        <button class="btn btn-primary">Explorar categorias</button>
+        <button class="btn btn-outline">Assine a newsletter</button>
+      </div>
+    </section>
+    <section aria-labelledby="popular-categories-title" class="popular-categories container">
+      <h2 id="popular-categories-title">Categorias Populares</h2>
+      <div class="categories-grid">
+        <a href="\" class="category-card">
+          <h3>Work</h3>
+          <p>Dicas e insights sobre carreira e produtividade</p>
+        </a>
+        <a href="\" class="category-card">
+          <h3>Books</h3>
+          <p>Resenhas e recomendações de leitura</p>
+        </a>
+        <a href="\" class="category-card">
+          <h3>Techno</h3>
+          <p>As últimas tendências em tecnologia</p>
+        </a>
+      </div>
+    </section>
+    <section aria-labelledby="all-categories-title" class="all-categories container">
+      <h2 id="all-categories-title">Todas as Categorias</h2>
+      <div class="categories-list">
+        <button class="category-tag" aria-label="Categoria Negócios">Negócios</button>
+        <button class="category-tag" aria-label="Categoria Techno">Techno</button>
+        <button class="category-tag" aria-label="Categoria Produtividade">Produtividade</button>
+        <button class="category-tag" aria-label="Categoria Filmes">Filmes</button>
+        <button class="category-tag" aria-label="Categoria Lifestyle">Lifestyle</button>
+        <button class="category-tag" aria-label="Categoria Educação">Educação</button>
+        <button class="category-tag" aria-label="Categoria Mailing">Mailing</button>
+        <button class="category-tag" aria-label="Categoria eCommerce">eCommerce</button>
+        <button class="category-tag" aria-label="Categoria Alimentação">Alimentação</button>
+        <button class="category-tag" aria-label="Categoria Social">Social</button>
+      </div>
+    </section>
+    <section class="featured-editor container" aria-label="Posts em destaque e escolhas do editor">
+      <div class="featured-posts" aria-labelledby="featured-posts-title">
+        <h2 id="featured-posts-title">Posts em Destaque</h2>
+        <a href="\" class="post">
+          <p class="post-meta">31 Jul 2025 • <strong>Destaque</strong></p>
+          <h3>Erros de Design que Todos Devem Evitar</h3>
+          <p class="reading-time">3 min de leitura</p>
+        </a>
+        <a href="\" class="post">
+          <p class="post-meta">31 Jul 2025 • <strong>Destaque</strong></p>
+          <h3>As Maiores Empresas por Receita</h3>
+          <p class="reading-time">5 min de leitura</p>
+        </a>
+      </div>
+      <aside class="editors-choice" aria-labelledby="editors-choice-title">
+        <h2 id="editors-choice-title">Escolhas do Editor</h2>
+        <ul>
+          <li><a href="#" tabindex="0">O uso negativo da internet</a></li>
+          <li><a href="#" tabindex="0">O segredo do brainstorm</a></li>
+          <li><a href="#" tabindex="0">Escalar para pequenos negócios</a></li>
+          <li><a href="#" tabindex="0">O futuro do trabalho remoto</a></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+  <footer>
+    <nav aria-label="Navegação secundária" class="footer-nav container">
+      <ul>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Bags</a></li>
+        <li><a href="#">Lamp</a></li>
+        <li><a href="#">Books</a></li>
+      </ul>
+    </nav>
+    <div class="footer-copy container">
+      <p>© 2025 Garotos de Programa • Todos os direitos reservados</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
 </html>
